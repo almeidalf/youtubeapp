@@ -16,6 +16,11 @@ class BuscarVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated);
+    self.navigationController?.isNavigationBarHidden = true
+    }
+    
     
     public func pesquisar(nomeVideo: String){
         Singleton.sharedInstance.showActivityIndicatory(view: self.view)

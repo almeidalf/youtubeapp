@@ -20,7 +20,13 @@ class ListaVideosVC: UIViewController, UITableViewDelegate{
         self.tableView.dataSource = self
         
         setupTableView()
+        Botoes.voltar(view: self)
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated);
+    self.navigationController?.isNavigationBarHidden = false
     }
     
     public func visualizarDetalhes(videoId: String){

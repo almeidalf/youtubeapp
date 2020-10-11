@@ -23,6 +23,7 @@ class DetalhesVideo: UIViewController {
         super.viewDidLoad()
         
         preencherDados()
+        Botoes.voltar(view: self)
     }
     
     func preencherDados(){

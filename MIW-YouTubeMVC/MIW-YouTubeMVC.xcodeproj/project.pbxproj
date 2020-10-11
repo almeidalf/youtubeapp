@@ -24,6 +24,7 @@
 		A94E2DC625312079004E37C9 /* InfoVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94E2DC425312079004E37C9 /* InfoVideoCell.xib */; };
 		A97585B4253355BD0080BAC0 /* MessageUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97585B3253355BD0080BAC0 /* MessageUtil.swift */; };
 		A97585C42533573C0080BAC0 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97585C32533573C0080BAC0 /* Singleton.swift */; };
+		A97585D925338F550080BAC0 /* Botoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97585D825338F550080BAC0 /* Botoes.swift */; };
 		A98E7C7D2532177A00455539 /* DetalhesDoVideoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E7C7C2532177A00455539 /* DetalhesDoVideoResponse.swift */; };
 		A98E7C822532ADE900455539 /* DetalhesVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E7C812532ADE900455539 /* DetalhesVideoVC.swift */; };
 		A98E7C8A2532B57A00455539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98E7C892532B57900455539 /* Assets.xcassets */; };
@@ -77,6 +78,7 @@
 		A94E2DC425312079004E37C9 /* InfoVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoVideoCell.xib; sourceTree = "<group>"; };
 		A97585B3253355BD0080BAC0 /* MessageUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageUtil.swift; sourceTree = "<group>"; };
 		A97585C32533573C0080BAC0 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		A97585D825338F550080BAC0 /* Botoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Botoes.swift; sourceTree = "<group>"; };
 		A98E7C7C2532177A00455539 /* DetalhesDoVideoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesDoVideoResponse.swift; sourceTree = "<group>"; };
 		A98E7C812532ADE900455539 /* DetalhesVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesVideoVC.swift; sourceTree = "<group>"; };
 		A98E7C892532B57900455539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 			children = (
 				A97585B3253355BD0080BAC0 /* MessageUtil.swift */,
 				A97585C32533573C0080BAC0 /* Singleton.swift */,
+				A97585D825338F550080BAC0 /* Botoes.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A94E2DC525312079004E37C9 /* InfoVideoCell.swift in Sources */,
+				A97585D925338F550080BAC0 /* Botoes.swift in Sources */,
 				A94E2D542530DC82004E37C9 /* AppDelegate.swift in Sources */,
 				A94E2DBA25311E3B004E37C9 /* ErroResponse.swift in Sources */,
 				A94E2DB525311D1D004E37C9 /* ListaDeBuscaYouTube.swift in Sources */,

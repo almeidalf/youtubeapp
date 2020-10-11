@@ -80,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jiH-Wl-P0Y">
-                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InfoCell" id="jWV-Xg-MPz">
@@ -98,19 +98,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="jiH-Wl-P0Y" secondAttribute="bottom" id="Eui-x4-BNd"/>
-                            <constraint firstItem="jiH-Wl-P0Y" firstAttribute="top" secondItem="PLh-bg-fbb" secondAttribute="top" constant="50" id="Goc-YV-QsM"/>
+                            <constraint firstItem="jiH-Wl-P0Y" firstAttribute="top" secondItem="PLh-bg-fbb" secondAttribute="top" id="Goc-YV-QsM"/>
                             <constraint firstItem="jiH-Wl-P0Y" firstAttribute="leading" secondItem="PLh-bg-fbb" secondAttribute="leading" id="KOe-Qo-Huy"/>
                             <constraint firstItem="jiH-Wl-P0Y" firstAttribute="trailing" secondItem="PLh-bg-fbb" secondAttribute="trailing" id="Z3D-hL-bw9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="YmP-U2-wJR"/>
                     <connections>
                         <outlet property="tableView" destination="jiH-Wl-P0Y" id="fHz-Jd-RR9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBr-4Z-jZA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1655" y="62"/>
+            <point key="canvasLocation" x="1653.6231884057972" y="61.607142857142854"/>
         </scene>
         <!--Detalhes Video-->
         <scene sceneID="C27-qr-3T3">
@@ -127,13 +126,13 @@
                                     <constraint firstAttribute="height" constant="200" id="hpn-m1-wYE"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo do video" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cR-VX-7ul">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Titulo do video" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cR-VX-7ul">
                                 <rect key="frame" x="20" y="254" width="374" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="TmY-Na-qhg"/>
                                     <constraint firstAttribute="height" constant="38" id="VAc-bM-JWy"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -165,14 +164,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hand.thumbsdown" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="X0j-gk-tqX">
-                                <rect key="frame" x="144" y="333.5" width="25" height="25"/>
+                                <rect key="frame" x="144" y="335.5" width="25" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="25" id="7AS-Hu-0yr"/>
                                     <constraint firstAttribute="height" constant="24" id="HO9-FC-B9e"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ouf-Ne-bBR">
-                                <rect key="frame" x="177" y="334" width="85" height="21"/>
+                                <rect key="frame" x="177" y="337" width="85" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -192,7 +191,7 @@
                             <constraint firstItem="Ouf-Ne-bBR" firstAttribute="leading" secondItem="X0j-gk-tqX" secondAttribute="trailing" constant="8" id="3mz-6f-EGk"/>
                             <constraint firstItem="KnN-Wp-7Ah" firstAttribute="top" secondItem="BFC-0W-VsG" secondAttribute="bottom" constant="10" id="8nn-As-tCT"/>
                             <constraint firstItem="sGN-J2-SNj" firstAttribute="top" secondItem="xJD-kr-gTc" secondAttribute="bottom" constant="25" id="Dwt-Cm-4oi"/>
-                            <constraint firstItem="Ouf-Ne-bBR" firstAttribute="top" secondItem="BFC-0W-VsG" secondAttribute="bottom" constant="11" id="EMS-Kz-A3W"/>
+                            <constraint firstItem="Ouf-Ne-bBR" firstAttribute="top" secondItem="BFC-0W-VsG" secondAttribute="bottom" constant="14" id="EMS-Kz-A3W"/>
                             <constraint firstItem="sGN-J2-SNj" firstAttribute="trailing" secondItem="hUU-HH-zre" secondAttribute="trailing" id="Hlz-ev-y7V"/>
                             <constraint firstItem="sIB-2J-zZy" firstAttribute="top" secondItem="hUU-HH-zre" secondAttribute="top" id="Ka9-qT-fJl"/>
                             <constraint firstItem="sIB-2J-zZy" firstAttribute="leading" secondItem="hUU-HH-zre" secondAttribute="leading" id="LOv-Kj-byW"/>
@@ -202,7 +201,7 @@
                             <constraint firstItem="X0j-gk-tqX" firstAttribute="leading" secondItem="xJD-kr-gTc" secondAttribute="trailing" constant="6" id="bqQ-Og-n9G"/>
                             <constraint firstItem="sIB-2J-zZy" firstAttribute="trailing" secondItem="hUU-HH-zre" secondAttribute="trailing" id="btE-6o-TEd"/>
                             <constraint firstItem="xJD-kr-gTc" firstAttribute="top" secondItem="BFC-0W-VsG" secondAttribute="bottom" constant="14" id="cma-Lt-6fi"/>
-                            <constraint firstItem="X0j-gk-tqX" firstAttribute="top" secondItem="BFC-0W-VsG" secondAttribute="bottom" constant="10" id="eHZ-ql-39T"/>
+                            <constraint firstItem="X0j-gk-tqX" firstAttribute="top" secondItem="BFC-0W-VsG" secondAttribute="bottom" constant="12" id="eHZ-ql-39T"/>
                             <constraint firstItem="hUU-HH-zre" firstAttribute="trailing" secondItem="3cR-VX-7ul" secondAttribute="trailing" constant="20" id="ezi-5W-nb6"/>
                             <constraint firstItem="BFC-0W-VsG" firstAttribute="top" secondItem="3cR-VX-7ul" secondAttribute="bottom" constant="10" id="fxb-tV-s5a"/>
                             <constraint firstItem="hUU-HH-zre" firstAttribute="trailing" secondItem="BFC-0W-VsG" secondAttribute="trailing" constant="20" id="gQR-HM-YvH"/>
@@ -231,11 +230,15 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RpP-4A-PIW" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Eq9-59-gJl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="voltar" id="Eq9-59-gJl">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" systemColor="systemGrayColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LzA-yc-3WK">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bXa-7P-aVF"/>
                     </connections>
@@ -249,6 +252,7 @@
         <image name="hand.thumbsdown" catalog="system" width="128" height="128"/>
         <image name="hand.thumbsup" catalog="system" width="128" height="128"/>
         <image name="madeinweb" width="265" height="62"/>
+        <image name="voltar" width="22" height="19"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -257,6 +261,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

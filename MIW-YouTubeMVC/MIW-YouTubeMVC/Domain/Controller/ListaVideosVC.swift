@@ -24,26 +24,29 @@ class ListaVideosVC: UIViewController, UITableViewDelegate{
     }
     
     public func visualizarDetalhes(videoId: String){
+        Singleton.sharedInstance.showActivityIndicatory(view: self.view)
         let onSuccess = { (item: DetalhesDoVideoResponse) -> Void  in
-                    let myVC = self.storyboard?.instantiateViewController(withIdentifier: "goToDetalhesVideo") as! DetalhesVideo
+            Singleton.sharedInstance.stopActivityIndicatory()
+            let myVC = self.storyboard?.instantiateViewController(withIdentifier: "goToDetalhesVideo") as! DetalhesVideo
             myVC.dados = item
-                    self.navigationController?.pushViewController(myVC, animated: true)
-                }
-                
-                let onError = { (item: ErroResponse) -> Void in
-                    // Loading hide
-                }
-                WS.getDetalhes(videoId: videoId, onSuccess: onSuccess, onError: onError)
+            self.navigationController?.pushViewController(myVC, animated: true)
+        }
+        
+        let onError = { (item: ErroResponse) -> Void in
+            // Loading hide
+            Singleton.sharedInstance.stopActivityIndicatory()
+        }
+        WS.getDetalhes(videoId: videoId, onSuccess: onSuccess, onError: onError)
     }
     
     private func setupTableView(){
-            let nib = UINib(nibName: "InfoVideoCell", bundle: nil)
-            tableView.register(nib, forCellReuseIdentifier: "InfoCell")
-            self.tableView.rowHeight = 80.0
-        }
+        let nib = UINib(nibName: "InfoVideoCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "InfoCell")
+        self.tableView.rowHeight = 80.0
+    }
 }
 
-    //MARK: - EXTENSION
+//MARK: - EXTENSION
 extension ListaVideosVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dados.items.count

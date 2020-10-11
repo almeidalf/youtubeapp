@@ -16,20 +16,29 @@ class DetalhesVideo: UIViewController {
     @IBOutlet weak var lblVisualizacoes: UILabel!
     @IBOutlet weak var lblLikes: UILabel!
     @IBOutlet weak var lblDislikes: UILabel!
-    @IBOutlet weak var lblDescricao: UILabel!
+    @IBOutlet weak var txtDescricao: UITextView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        preencherDados()
+    }
+    
+    func preencherDados(){
+        if let urlImagem = dados.items?.first?.snippet?.thumbDetalhes?.stand?.url{
+            let url = URL(string: urlImagem)!
+            let data = try? Data(contentsOf: url)
+            imgDetalhes.image = UIImage(data: data!)
+        }
+        
         lblTitulo.text = dados.items?.first?.snippet?.title
         if let visualizacoes = dados.items?.first?.statistics?.viewCount {
-        lblVisualizacoes.text = "\(visualizacoes) Visualizações"
+            lblVisualizacoes.text = "\(visualizacoes) Visualizações"
         }
         lblLikes.text = dados.items?.first?.statistics?.likeCount
         lblDislikes.text = dados.items?.first?.statistics?.dislikeCount
-        lblDescricao.text = dados.items?.first?.snippet?.description
+        txtDescricao.text = dados.items?.first?.snippet?.description
     }
-    
     
 }

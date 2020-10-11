@@ -8,7 +8,7 @@
 import UIKit
 
 class BuscarVC: UIViewController {
-
+    
     @IBOutlet weak var txtPesquisa: UITextField!
     
     override func viewDidLoad() {
@@ -18,19 +18,24 @@ class BuscarVC: UIViewController {
     
     
     public func pesquisar(nomeVideo: String){
+        Singleton.sharedInstance.showActivityIndicatory(view: self.view)
         let onSuccess = { (item: ListaDeBuscaYouTube) -> Void  in
-                    let myVC = self.storyboard?.instantiateViewController(withIdentifier: "goToListVideos") as! ListaVideosVC
-                    myVC.dados = item
-                    self.navigationController?.pushViewController(myVC, animated: true)
-                }
-                
-                let onError = { (item: ErroResponse) -> Void in
-                    // Loading hide
-                }
-                WS.getPesquisarVideos(buscar: nomeVideo, onSuccess: onSuccess, onError: onError)
+            Singleton.sharedInstance.stopActivityIndicatory()
+            let myVC = self.storyboard?.instantiateViewController(withIdentifier: "goToListVideos") as! ListaVideosVC
+            myVC.dados = item
+            self.navigationController?.pushViewController(myVC, animated: true)
+        }
+        
+        let onError = { (err: ErroResponse) -> Void in
+            // Loading hide
+            Singleton.sharedInstance.stopActivityIndicatory()
+            
+            MessageUtil.errorAlert(title: "Oops!", msg: err.message ?? "", view: self)
+        }
+        WS.getPesquisarNome(video: nomeVideo, onSuccess: onSuccess, onError: onError)
     }
-
-
+    
+    
     @IBAction func Buscar(_ sender: Any) {
         pesquisar(nomeVideo: txtPesquisa.text!)
     }

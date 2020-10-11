@@ -8,7 +8,7 @@
 import UIKit
 
 class InfoVideoCell: UITableViewCell {
-
+    
     @IBOutlet weak var imagemCell: UIImageView!
     @IBOutlet weak var tituloCell: UILabel!
     @IBOutlet weak var descricaoCell: UILabel!
@@ -17,10 +17,10 @@ class InfoVideoCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     

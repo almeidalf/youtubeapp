@@ -34,7 +34,37 @@ class SnippetStatistics : Mappable {
     }
 }
 
+class ThumbnailsDetalhes : Mappable {
+    var stand: DefaultDetalhes?
+    
+    required convenience init?(map: Map) {
+        self.init()
+    }
+    
+    func mapping(map: Map) {
+        stand <- map["standard"]
+    }
+}
+
+class DefaultDetalhes : Mappable {
+    var url: String?
+    var width: String?
+    var height: String?
+    
+    
+    required convenience init?(map: Map) {
+        self.init()
+    }
+    
+    func mapping(map: Map) {
+        url <- map["url"]
+        width <- map["width"]
+        height <- map["height"]
+    }
+}
+
 class FragmentoDetalhes : Mappable {
+    var thumbDetalhes: ThumbnailsDetalhes?
     var title: String?
     var description: String?
     
@@ -43,6 +73,7 @@ class FragmentoDetalhes : Mappable {
     }
     
     func mapping(map: Map) {
+        thumbDetalhes <- map["thumbnails"]
         title <- map["title"]
         description <- map["description"]
     }

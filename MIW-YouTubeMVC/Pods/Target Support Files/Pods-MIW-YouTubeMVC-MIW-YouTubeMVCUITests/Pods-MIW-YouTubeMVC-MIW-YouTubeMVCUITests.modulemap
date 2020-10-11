@@ -1,0 +1,6 @@
+framework module Pods_MIW_YouTubeMVC_MIW_YouTubeMVCUITests {
+  umbrella header "Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

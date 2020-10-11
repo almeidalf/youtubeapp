@@ -1,0 +1,846 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E9D4C75F714DAB939A10391 /* Pods_MIW_YouTubeMVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBA12C04DC0F73CF57D5B484 /* Pods_MIW_YouTubeMVC.framework */; };
+		A94E2D542530DC82004E37C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E2D532530DC82004E37C9 /* AppDelegate.swift */; };
+		A94E2D562530DC82004E37C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E2D552530DC82004E37C9 /* SceneDelegate.swift */; };
+		A94E2D5B2530DC82004E37C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94E2D592530DC82004E37C9 /* Main.storyboard */; };
+		A94E2D602530DC86004E37C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94E2D5E2530DC86004E37C9 /* LaunchScreen.storyboard */; };
+		A94E2D6B2530DC86004E37C9 /* MIW_YouTubeMVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E2D6A2530DC86004E37C9 /* MIW_YouTubeMVCTests.swift */; };
+		A94E2D762530DC86004E37C9 /* MIW_YouTubeMVCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E2D752530DC86004E37C9 /* MIW_YouTubeMVCUITests.swift */; };
+		A94E2D982530DDDD004E37C9 /* BuscarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E2D972530DDDD004E37C9 /* BuscarVC.swift */; };
+		A94E2DAE2530FD18004E37C9 /* WS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E2DAC2530FD17004E37C9 /* WS.swift */; };
+		A94E2DAF2530FD18004E37C9 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E2DAD2530FD18004E37C9 /* API.swift */; };
+		A94E2DB525311D1D004E37C9 /* ListaDeBuscaYouTube.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E2DB425311D1D004E37C9 /* ListaDeBuscaYouTube.swift */; };
+		A94E2DBA25311E3B004E37C9 /* ErroResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E2DB925311E3B004E37C9 /* ErroResponse.swift */; };
+		A94E2DBF25311F08004E37C9 /* ListaVideosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E2DBE25311F08004E37C9 /* ListaVideosVC.swift */; };
+		A94E2DC525312079004E37C9 /* InfoVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94E2DC325312079004E37C9 /* InfoVideoCell.swift */; };
+		A94E2DC625312079004E37C9 /* InfoVideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94E2DC425312079004E37C9 /* InfoVideoCell.xib */; };
+		A98E7C7D2532177A00455539 /* DetalhesDoVideoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E7C7C2532177A00455539 /* DetalhesDoVideoResponse.swift */; };
+		A98E7C822532ADE900455539 /* DetalhesVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E7C812532ADE900455539 /* DetalhesVideoVC.swift */; };
+		A98E7C8A2532B57A00455539 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98E7C892532B57900455539 /* Assets.xcassets */; };
+		AB412EC211DAB8088813EB99 /* Pods_MIW_YouTubeMVC_MIW_YouTubeMVCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F33D863C36FDE861D5B9E8 /* Pods_MIW_YouTubeMVC_MIW_YouTubeMVCUITests.framework */; };
+		ACA744AFA0923569CBE2CBA5 /* Pods_MIW_YouTubeMVCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A66EFD29195E038E0F5BCD /* Pods_MIW_YouTubeMVCTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A94E2D672530DC86004E37C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A94E2D482530DC82004E37C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A94E2D4F2530DC82004E37C9;
+			remoteInfo = "MIW-YouTubeMVC";
+		};
+		A94E2D722530DC86004E37C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A94E2D482530DC82004E37C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A94E2D4F2530DC82004E37C9;
+			remoteInfo = "MIW-YouTubeMVC";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33A66EFD29195E038E0F5BCD /* Pods_MIW_YouTubeMVCTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MIW_YouTubeMVCTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3960B2C6454CB655A1056543 /* Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests.debug.xcconfig"; path = "Target Support Files/Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests/Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		50F76921E4EF50E3AB8E4F56 /* Pods-MIW-YouTubeMVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIW-YouTubeMVC.debug.xcconfig"; path = "Target Support Files/Pods-MIW-YouTubeMVC/Pods-MIW-YouTubeMVC.debug.xcconfig"; sourceTree = "<group>"; };
+		69BE79A682B23CFE948D185B /* Pods-MIW-YouTubeMVCTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIW-YouTubeMVCTests.debug.xcconfig"; path = "Target Support Files/Pods-MIW-YouTubeMVCTests/Pods-MIW-YouTubeMVCTests.debug.xcconfig"; sourceTree = "<group>"; };
+		79CD7B2906809E453F6E77F1 /* Pods-MIW-YouTubeMVCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIW-YouTubeMVCTests.release.xcconfig"; path = "Target Support Files/Pods-MIW-YouTubeMVCTests/Pods-MIW-YouTubeMVCTests.release.xcconfig"; sourceTree = "<group>"; };
+		9BA0634ED771E867062D198E /* Pods-MIW-YouTubeMVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIW-YouTubeMVC.release.xcconfig"; path = "Target Support Files/Pods-MIW-YouTubeMVC/Pods-MIW-YouTubeMVC.release.xcconfig"; sourceTree = "<group>"; };
+		A94E2D502530DC82004E37C9 /* MIW-YouTubeMVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MIW-YouTubeMVC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94E2D532530DC82004E37C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A94E2D552530DC82004E37C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A94E2D5A2530DC82004E37C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A94E2D5F2530DC86004E37C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A94E2D612530DC86004E37C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94E2D662530DC86004E37C9 /* MIW-YouTubeMVCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MIW-YouTubeMVCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94E2D6A2530DC86004E37C9 /* MIW_YouTubeMVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIW_YouTubeMVCTests.swift; sourceTree = "<group>"; };
+		A94E2D6C2530DC86004E37C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94E2D712530DC86004E37C9 /* MIW-YouTubeMVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MIW-YouTubeMVCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94E2D752530DC86004E37C9 /* MIW_YouTubeMVCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MIW_YouTubeMVCUITests.swift; sourceTree = "<group>"; };
+		A94E2D772530DC86004E37C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94E2D972530DDDD004E37C9 /* BuscarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscarVC.swift; sourceTree = "<group>"; };
+		A94E2DAC2530FD17004E37C9 /* WS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WS.swift; sourceTree = "<group>"; };
+		A94E2DAD2530FD18004E37C9 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		A94E2DB425311D1D004E37C9 /* ListaDeBuscaYouTube.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListaDeBuscaYouTube.swift; path = ../../../../../MadeInWebYouTube/MadeInWebYouTube/Model/ObjectMapper/Request/ListaDeBuscaYouTube.swift; sourceTree = "<group>"; };
+		A94E2DB925311E3B004E37C9 /* ErroResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErroResponse.swift; sourceTree = "<group>"; };
+		A94E2DBE25311F08004E37C9 /* ListaVideosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaVideosVC.swift; sourceTree = "<group>"; };
+		A94E2DC325312079004E37C9 /* InfoVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVideoCell.swift; sourceTree = "<group>"; };
+		A94E2DC425312079004E37C9 /* InfoVideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoVideoCell.xib; sourceTree = "<group>"; };
+		A98E7C7C2532177A00455539 /* DetalhesDoVideoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesDoVideoResponse.swift; sourceTree = "<group>"; };
+		A98E7C812532ADE900455539 /* DetalhesVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesVideoVC.swift; sourceTree = "<group>"; };
+		A98E7C892532B57900455539 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBA12C04DC0F73CF57D5B484 /* Pods_MIW_YouTubeMVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MIW_YouTubeMVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5F33D863C36FDE861D5B9E8 /* Pods_MIW_YouTubeMVC_MIW_YouTubeMVCUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MIW_YouTubeMVC_MIW_YouTubeMVCUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD52ADBA22F2B218B0F5E89C /* Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests.release.xcconfig"; path = "Target Support Files/Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests/Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A94E2D4D2530DC82004E37C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9D4C75F714DAB939A10391 /* Pods_MIW_YouTubeMVC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94E2D632530DC86004E37C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA744AFA0923569CBE2CBA5 /* Pods_MIW_YouTubeMVCTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94E2D6E2530DC86004E37C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB412EC211DAB8088813EB99 /* Pods_MIW_YouTubeMVC_MIW_YouTubeMVCUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25709E7870C93D816A201A16 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50F76921E4EF50E3AB8E4F56 /* Pods-MIW-YouTubeMVC.debug.xcconfig */,
+				9BA0634ED771E867062D198E /* Pods-MIW-YouTubeMVC.release.xcconfig */,
+				3960B2C6454CB655A1056543 /* Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests.debug.xcconfig */,
+				DD52ADBA22F2B218B0F5E89C /* Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests.release.xcconfig */,
+				69BE79A682B23CFE948D185B /* Pods-MIW-YouTubeMVCTests.debug.xcconfig */,
+				79CD7B2906809E453F6E77F1 /* Pods-MIW-YouTubeMVCTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		41E361E5A138611217AA5FAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBA12C04DC0F73CF57D5B484 /* Pods_MIW_YouTubeMVC.framework */,
+				D5F33D863C36FDE861D5B9E8 /* Pods_MIW_YouTubeMVC_MIW_YouTubeMVCUITests.framework */,
+				33A66EFD29195E038E0F5BCD /* Pods_MIW_YouTubeMVCTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A94E2D472530DC82004E37C9 = {
+			isa = PBXGroup;
+			children = (
+				A94E2D522530DC82004E37C9 /* MIW-YouTubeMVC */,
+				A94E2D692530DC86004E37C9 /* MIW-YouTubeMVCTests */,
+				A94E2D742530DC86004E37C9 /* MIW-YouTubeMVCUITests */,
+				A94E2D512530DC82004E37C9 /* Products */,
+				25709E7870C93D816A201A16 /* Pods */,
+				41E361E5A138611217AA5FAC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A94E2D512530DC82004E37C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A94E2D502530DC82004E37C9 /* MIW-YouTubeMVC.app */,
+				A94E2D662530DC86004E37C9 /* MIW-YouTubeMVCTests.xctest */,
+				A94E2D712530DC86004E37C9 /* MIW-YouTubeMVCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A94E2D522530DC82004E37C9 /* MIW-YouTubeMVC */ = {
+			isa = PBXGroup;
+			children = (
+				A94E2DA32530E581004E37C9 /* API */,
+				A94E2D932530DD6A004E37C9 /* Domain */,
+				A94E2D8F2530DCF5004E37C9 /* Common */,
+			);
+			path = "MIW-YouTubeMVC";
+			sourceTree = "<group>";
+		};
+		A94E2D692530DC86004E37C9 /* MIW-YouTubeMVCTests */ = {
+			isa = PBXGroup;
+			children = (
+				A94E2D6A2530DC86004E37C9 /* MIW_YouTubeMVCTests.swift */,
+				A94E2D6C2530DC86004E37C9 /* Info.plist */,
+			);
+			path = "MIW-YouTubeMVCTests";
+			sourceTree = "<group>";
+		};
+		A94E2D742530DC86004E37C9 /* MIW-YouTubeMVCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A94E2D752530DC86004E37C9 /* MIW_YouTubeMVCUITests.swift */,
+				A94E2D772530DC86004E37C9 /* Info.plist */,
+			);
+			path = "MIW-YouTubeMVCUITests";
+			sourceTree = "<group>";
+		};
+		A94E2D8F2530DCF5004E37C9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A98E7C892532B57900455539 /* Assets.xcassets */,
+				A94E2D5E2530DC86004E37C9 /* LaunchScreen.storyboard */,
+				A94E2D552530DC82004E37C9 /* SceneDelegate.swift */,
+				A94E2D532530DC82004E37C9 /* AppDelegate.swift */,
+				A94E2D612530DC86004E37C9 /* Info.plist */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A94E2D932530DD6A004E37C9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A94E2D962530DD83004E37C9 /* Controller */,
+				A94E2D952530DD79004E37C9 /* View */,
+				A94E2D942530DD71004E37C9 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A94E2D942530DD71004E37C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A94E2DB325311CE8004E37C9 /* Response */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A94E2D952530DD79004E37C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A94E2D9F2530DE2B004E37C9 /* Cell */,
+				A94E2D592530DC82004E37C9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A94E2D962530DD83004E37C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A94E2D972530DDDD004E37C9 /* BuscarVC.swift */,
+				A94E2DBE25311F08004E37C9 /* ListaVideosVC.swift */,
+				A98E7C812532ADE900455539 /* DetalhesVideoVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A94E2D9F2530DE2B004E37C9 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A94E2DC325312079004E37C9 /* InfoVideoCell.swift */,
+				A94E2DC425312079004E37C9 /* InfoVideoCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A94E2DA32530E581004E37C9 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A94E2DAD2530FD18004E37C9 /* API.swift */,
+				A94E2DAC2530FD17004E37C9 /* WS.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A94E2DB325311CE8004E37C9 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				A94E2DB425311D1D004E37C9 /* ListaDeBuscaYouTube.swift */,
+				A94E2DB925311E3B004E37C9 /* ErroResponse.swift */,
+				A98E7C7C2532177A00455539 /* DetalhesDoVideoResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A94E2D4F2530DC82004E37C9 /* MIW-YouTubeMVC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94E2D7A2530DC86004E37C9 /* Build configuration list for PBXNativeTarget "MIW-YouTubeMVC" */;
+			buildPhases = (
+				1594BAAEAFBFE2AC154BB310 /* [CP] Check Pods Manifest.lock */,
+				A94E2D4C2530DC82004E37C9 /* Sources */,
+				A94E2D4D2530DC82004E37C9 /* Frameworks */,
+				A94E2D4E2530DC82004E37C9 /* Resources */,
+				E5FD99DC5865EE0C1031F63B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MIW-YouTubeMVC";
+			productName = "MIW-YouTubeMVC";
+			productReference = A94E2D502530DC82004E37C9 /* MIW-YouTubeMVC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A94E2D652530DC86004E37C9 /* MIW-YouTubeMVCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94E2D7D2530DC86004E37C9 /* Build configuration list for PBXNativeTarget "MIW-YouTubeMVCTests" */;
+			buildPhases = (
+				1A6E5E6594EFDF64216FD3C8 /* [CP] Check Pods Manifest.lock */,
+				A94E2D622530DC86004E37C9 /* Sources */,
+				A94E2D632530DC86004E37C9 /* Frameworks */,
+				A94E2D642530DC86004E37C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A94E2D682530DC86004E37C9 /* PBXTargetDependency */,
+			);
+			name = "MIW-YouTubeMVCTests";
+			productName = "MIW-YouTubeMVCTests";
+			productReference = A94E2D662530DC86004E37C9 /* MIW-YouTubeMVCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A94E2D702530DC86004E37C9 /* MIW-YouTubeMVCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94E2D802530DC86004E37C9 /* Build configuration list for PBXNativeTarget "MIW-YouTubeMVCUITests" */;
+			buildPhases = (
+				3D48E38413C28F1C5E300903 /* [CP] Check Pods Manifest.lock */,
+				A94E2D6D2530DC86004E37C9 /* Sources */,
+				A94E2D6E2530DC86004E37C9 /* Frameworks */,
+				A94E2D6F2530DC86004E37C9 /* Resources */,
+				040D572D2F54022906F593B6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A94E2D732530DC86004E37C9 /* PBXTargetDependency */,
+			);
+			name = "MIW-YouTubeMVCUITests";
+			productName = "MIW-YouTubeMVCUITests";
+			productReference = A94E2D712530DC86004E37C9 /* MIW-YouTubeMVCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A94E2D482530DC82004E37C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					A94E2D4F2530DC82004E37C9 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					A94E2D652530DC86004E37C9 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = A94E2D4F2530DC82004E37C9;
+					};
+					A94E2D702530DC86004E37C9 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = A94E2D4F2530DC82004E37C9;
+					};
+				};
+			};
+			buildConfigurationList = A94E2D4B2530DC82004E37C9 /* Build configuration list for PBXProject "MIW-YouTubeMVC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A94E2D472530DC82004E37C9;
+			productRefGroup = A94E2D512530DC82004E37C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A94E2D4F2530DC82004E37C9 /* MIW-YouTubeMVC */,
+				A94E2D652530DC86004E37C9 /* MIW-YouTubeMVCTests */,
+				A94E2D702530DC86004E37C9 /* MIW-YouTubeMVCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A94E2D4E2530DC82004E37C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94E2D602530DC86004E37C9 /* LaunchScreen.storyboard in Resources */,
+				A94E2DC625312079004E37C9 /* InfoVideoCell.xib in Resources */,
+				A98E7C8A2532B57A00455539 /* Assets.xcassets in Resources */,
+				A94E2D5B2530DC82004E37C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94E2D642530DC86004E37C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94E2D6F2530DC86004E37C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		040D572D2F54022906F593B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests/Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests/Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests/Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1594BAAEAFBFE2AC154BB310 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MIW-YouTubeMVC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A6E5E6594EFDF64216FD3C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MIW-YouTubeMVCTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D48E38413C28F1C5E300903 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5FD99DC5865EE0C1031F63B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MIW-YouTubeMVC/Pods-MIW-YouTubeMVC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MIW-YouTubeMVC/Pods-MIW-YouTubeMVC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MIW-YouTubeMVC/Pods-MIW-YouTubeMVC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A94E2D4C2530DC82004E37C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94E2DC525312079004E37C9 /* InfoVideoCell.swift in Sources */,
+				A94E2D542530DC82004E37C9 /* AppDelegate.swift in Sources */,
+				A94E2DBA25311E3B004E37C9 /* ErroResponse.swift in Sources */,
+				A94E2DB525311D1D004E37C9 /* ListaDeBuscaYouTube.swift in Sources */,
+				A94E2DAE2530FD18004E37C9 /* WS.swift in Sources */,
+				A94E2D982530DDDD004E37C9 /* BuscarVC.swift in Sources */,
+				A94E2D562530DC82004E37C9 /* SceneDelegate.swift in Sources */,
+				A98E7C822532ADE900455539 /* DetalhesVideoVC.swift in Sources */,
+				A98E7C7D2532177A00455539 /* DetalhesDoVideoResponse.swift in Sources */,
+				A94E2DBF25311F08004E37C9 /* ListaVideosVC.swift in Sources */,
+				A94E2DAF2530FD18004E37C9 /* API.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94E2D622530DC86004E37C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94E2D6B2530DC86004E37C9 /* MIW_YouTubeMVCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94E2D6D2530DC86004E37C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94E2D762530DC86004E37C9 /* MIW_YouTubeMVCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A94E2D682530DC86004E37C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A94E2D4F2530DC82004E37C9 /* MIW-YouTubeMVC */;
+			targetProxy = A94E2D672530DC86004E37C9 /* PBXContainerItemProxy */;
+		};
+		A94E2D732530DC86004E37C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A94E2D4F2530DC82004E37C9 /* MIW-YouTubeMVC */;
+			targetProxy = A94E2D722530DC86004E37C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A94E2D592530DC82004E37C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A94E2D5A2530DC82004E37C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A94E2D5E2530DC86004E37C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A94E2D5F2530DC86004E37C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A94E2D782530DC86004E37C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A94E2D792530DC86004E37C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A94E2D7B2530DC86004E37C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50F76921E4EF50E3AB8E4F56 /* Pods-MIW-YouTubeMVC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MIW-YouTubeMVC/Common/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.felipe.MIW-YouTubeMVC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A94E2D7C2530DC86004E37C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BA0634ED771E867062D198E /* Pods-MIW-YouTubeMVC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MIW-YouTubeMVC/Common/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.felipe.MIW-YouTubeMVC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A94E2D7E2530DC86004E37C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69BE79A682B23CFE948D185B /* Pods-MIW-YouTubeMVCTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MIW-YouTubeMVCTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.felipe.MIW-YouTubeMVCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MIW-YouTubeMVC.app/MIW-YouTubeMVC";
+			};
+			name = Debug;
+		};
+		A94E2D7F2530DC86004E37C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79CD7B2906809E453F6E77F1 /* Pods-MIW-YouTubeMVCTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MIW-YouTubeMVCTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.felipe.MIW-YouTubeMVCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MIW-YouTubeMVC.app/MIW-YouTubeMVC";
+			};
+			name = Release;
+		};
+		A94E2D812530DC86004E37C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3960B2C6454CB655A1056543 /* Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MIW-YouTubeMVCUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.felipe.MIW-YouTubeMVCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MIW-YouTubeMVC";
+			};
+			name = Debug;
+		};
+		A94E2D822530DC86004E37C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD52ADBA22F2B218B0F5E89C /* Pods-MIW-YouTubeMVC-MIW-YouTubeMVCUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MIW-YouTubeMVCUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.felipe.MIW-YouTubeMVCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MIW-YouTubeMVC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A94E2D4B2530DC82004E37C9 /* Build configuration list for PBXProject "MIW-YouTubeMVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94E2D782530DC86004E37C9 /* Debug */,
+				A94E2D792530DC86004E37C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A94E2D7A2530DC86004E37C9 /* Build configuration list for PBXNativeTarget "MIW-YouTubeMVC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94E2D7B2530DC86004E37C9 /* Debug */,
+				A94E2D7C2530DC86004E37C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A94E2D7D2530DC86004E37C9 /* Build configuration list for PBXNativeTarget "MIW-YouTubeMVCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94E2D7E2530DC86004E37C9 /* Debug */,
+				A94E2D7F2530DC86004E37C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A94E2D802530DC86004E37C9 /* Build configuration list for PBXNativeTarget "MIW-YouTubeMVCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94E2D812530DC86004E37C9 /* Debug */,
+				A94E2D822530DC86004E37C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A94E2D482530DC82004E37C9 /* Project object */;
+}

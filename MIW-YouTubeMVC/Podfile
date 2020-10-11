@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+use_frameworks!
+
+target 'MIW-YouTubeMVC' do
+    pod 'Alamofire'
+    pod 'ObjectMapper'
+    pod 'AlamofireObjectMapper'
+
+  # Pods for MIW-YouTubeMVC
+
+  target 'MIW-YouTubeMVCTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MIW-YouTubeMVCUITests' do
+    # Pods for testing
+  end
+
+end

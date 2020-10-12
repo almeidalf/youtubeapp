@@ -38,9 +38,11 @@ class ListaVideosVC: UIViewController, UITableViewDelegate{
             self.navigationController?.pushViewController(myVC, animated: true)
         }
         
-        let onError = { (item: ErroResponse) -> Void in
+        let onError = { (err: ErroResponse) -> Void in
             // Loading hide
             Singleton.sharedInstance.stopActivityIndicatory()
+            
+            MessageUtil.errorAlert(title: "Oops!", msg: err.message ?? "", view: self)
         }
         WS.getDetalhes(videoId: videoId, onSuccess: onSuccess, onError: onError)
     }

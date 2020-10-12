@@ -80,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jiH-Wl-P0Y">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="840"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InfoCell" id="jWV-Xg-MPz">
@@ -98,7 +98,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="jiH-Wl-P0Y" secondAttribute="bottom" id="Eui-x4-BNd"/>
-                            <constraint firstItem="jiH-Wl-P0Y" firstAttribute="top" secondItem="PLh-bg-fbb" secondAttribute="top" id="Goc-YV-QsM"/>
+                            <constraint firstItem="jiH-Wl-P0Y" firstAttribute="top" secondItem="PLh-bg-fbb" secondAttribute="top" constant="12" id="Goc-YV-QsM"/>
                             <constraint firstItem="jiH-Wl-P0Y" firstAttribute="leading" secondItem="PLh-bg-fbb" secondAttribute="leading" id="KOe-Qo-Huy"/>
                             <constraint firstItem="jiH-Wl-P0Y" firstAttribute="trailing" secondItem="PLh-bg-fbb" secondAttribute="trailing" id="Z3D-hL-bw9"/>
                         </constraints>

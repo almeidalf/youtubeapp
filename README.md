@@ -17,7 +17,7 @@ Instalar o gerenciador dependências cocoapods caso não tenha em sua máquina.
 | ------ | ------ |
 | CocoaPods | [Guia de Instalação][PlDb] |
 
-Após instalado em seu mac abrir o terminal e seguir até a pasta do projeto utilizar o comando pod install e buildar o projeto no emulador/device
+Após instalado em seu mac abrir o terminal e seguir até a pasta do projeto utilizar o comando pod install (caso apareça algum erro rodar pod update) e buildar o projeto no emulador/device
 
    [PlDb]: <https://cocoapods.org/>
 

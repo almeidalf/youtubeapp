@@ -10,17 +10,17 @@ import UIKit
 class BuscarVC: UIViewController {
     
     @IBOutlet weak var txtPesquisa: UITextField!
+    @IBOutlet weak var imgMIW: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated);
-    self.navigationController?.isNavigationBarHidden = true
+        super.viewWillAppear(animated);
+        self.navigationController?.isNavigationBarHidden = true
     }
-    
     
     public func pesquisar(nomeVideo: String){
         Singleton.sharedInstance.showActivityIndicatory(view: self.view)
@@ -28,7 +28,7 @@ class BuscarVC: UIViewController {
             Singleton.sharedInstance.stopActivityIndicatory()
             let myVC = self.storyboard?.instantiateViewController(withIdentifier: "goToListVideos") as! ListaVideosVC
             myVC.dados = item
-            self.navigationController?.pushViewController(myVC, animated: true)
+            self.slideUp(vc: myVC)
         }
         
         let onError = { (err: ErroResponse) -> Void in
@@ -38,6 +38,16 @@ class BuscarVC: UIViewController {
             MessageUtil.errorAlert(title: "Oops!", msg: err.message ?? "", view: self)
         }
         WS.getPesquisarNome(video: nomeVideo, onSuccess: onSuccess, onError: onError)
+    }
+    
+    func slideUp(vc: UIViewController){
+        let transition:CATransition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromTop
+        navigationController?.view.layer.add(transition, forKey: kCATransition)
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     

@@ -10,8 +10,11 @@ import UIKit
 class ListaVideosVC: UIViewController, UITableViewDelegate{
     
     var dados: ListaDeBuscaYouTube = ListaDeBuscaYouTube()
+    var searchList : ListaDeBuscaYouTube = ListaDeBuscaYouTube()
+    var searching: Bool = false
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,12 +24,13 @@ class ListaVideosVC: UIViewController, UITableViewDelegate{
         
         setupTableView()
         Botoes.voltar(view: self)
+        Botoes.imagemCentro(view: self)
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
-    super.viewWillAppear(animated);
-    self.navigationController?.isNavigationBarHidden = false
+        super.viewWillAppear(animated);
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     public func visualizarDetalhes(videoId: String){
@@ -35,7 +39,7 @@ class ListaVideosVC: UIViewController, UITableViewDelegate{
             Singleton.sharedInstance.stopActivityIndicatory()
             let myVC = self.storyboard?.instantiateViewController(withIdentifier: "goToDetalhesVideo") as! DetalhesVideo
             myVC.dados = item
-            self.navigationController?.pushViewController(myVC, animated: true)
+            self.slideDown(vc: myVC)
         }
         
         let onError = { (err: ErroResponse) -> Void in
@@ -52,6 +56,16 @@ class ListaVideosVC: UIViewController, UITableViewDelegate{
         tableView.register(nib, forCellReuseIdentifier: "InfoCell")
         self.tableView.rowHeight = 80.0
     }
+    
+    func slideDown(vc: UIViewController){
+        let transition:CATransition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromBottom
+        navigationController?.view.layer.add(transition, forKey: kCATransition)
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 //MARK: - EXTENSION
@@ -62,10 +76,8 @@ extension ListaVideosVC: UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell : InfoVideoCell = tableView.dequeueReusableCell(withIdentifier: "InfoCell", for: indexPath) as! InfoVideoCell
-        
         cell.tituloCell.text = dados.items[indexPath.row].snippet?.title
         cell.descricaoCell.text = dados.items[indexPath.row].snippet?.description
-        
         //Config para aparecer img na thumb
         if let urlImagem = dados.items[indexPath.row].snippet?.thumbnails?.def?.url{
             let url = URL(string: urlImagem)!

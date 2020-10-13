@@ -6,6 +6,7 @@ target 'MIW-YouTubeMVC' do
     pod 'Alamofire'
     pod 'ObjectMapper'
     pod 'AlamofireObjectMapper'
+    pod 'IQKeyboardManagerSwift'
 
   # Pods for MIW-YouTubeMVC
 

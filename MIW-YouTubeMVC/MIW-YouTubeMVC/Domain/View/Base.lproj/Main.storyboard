@@ -63,7 +63,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="j6i-vT-dJo"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="imgMIW" destination="9OM-D9-l6w" id="vke-gh-9IQ"/>
                         <outlet property="txtPesquisa" destination="hky-zQ-FCn" id="oc0-zs-ARF"/>
                     </connections>
                 </viewController>
@@ -80,7 +84,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jiH-Wl-P0Y">
-                                <rect key="frame" x="0.0" y="56" width="414" height="840"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InfoCell" id="jWV-Xg-MPz">
@@ -98,11 +102,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="jiH-Wl-P0Y" secondAttribute="bottom" id="Eui-x4-BNd"/>
-                            <constraint firstItem="jiH-Wl-P0Y" firstAttribute="top" secondItem="PLh-bg-fbb" secondAttribute="top" constant="12" id="Goc-YV-QsM"/>
+                            <constraint firstItem="jiH-Wl-P0Y" firstAttribute="top" secondItem="PLh-bg-fbb" secondAttribute="top" id="Goc-YV-QsM"/>
                             <constraint firstItem="jiH-Wl-P0Y" firstAttribute="leading" secondItem="PLh-bg-fbb" secondAttribute="leading" id="KOe-Qo-Huy"/>
                             <constraint firstItem="jiH-Wl-P0Y" firstAttribute="trailing" secondItem="PLh-bg-fbb" secondAttribute="trailing" id="Z3D-hL-bw9"/>
                         </constraints>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="tableView" destination="jiH-Wl-P0Y" id="fHz-Jd-RR9"/>
                     </connections>
@@ -212,6 +219,9 @@
                             <constraint firstItem="BFC-0W-VsG" firstAttribute="leading" secondItem="hUU-HH-zre" secondAttribute="leading" constant="20" id="woq-e8-C60"/>
                         </constraints>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <outlet property="imgDetalhes" destination="sIB-2J-zZy" id="qaL-yB-uic"/>
                         <outlet property="lblDislikes" destination="Ouf-Ne-bBR" id="tmg-Cu-m92"/>
@@ -239,6 +249,9 @@
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LzA-yc-3WK">
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="bXa-7P-aVF"/>
                     </connections>

@@ -24,6 +24,7 @@ class DetalhesVideo: UIViewController {
         
         preencherDados()
         Botoes.voltar(view: self)
+        Botoes.imagemCentro(view: self)
     }
     
     func preencherDados(){

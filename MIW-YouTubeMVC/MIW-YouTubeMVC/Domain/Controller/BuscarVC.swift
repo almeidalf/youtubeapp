@@ -52,6 +52,10 @@ class BuscarVC: UIViewController {
     
     
     @IBAction func Buscar(_ sender: Any) {
-        pesquisar(nomeVideo: txtPesquisa.text!)
+        if txtPesquisa.text?.count != 0 {
+            pesquisar(nomeVideo: txtPesquisa.text!)
+        }else{
+            MessageUtil.errorAlert(title: "Oops!", msg: "Por favor, digite algo no campo de pesquisa!", view: self)
+        }
     }
 }

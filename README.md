@@ -25,4 +25,4 @@ Após instalado em seu mac abrir o terminal e seguir até a pasta do projeto uti
    
 # Contato:
 - Email: felipedovale1997@gmail.com
--Github: https://github.com/almeidalf
+- Github: https://github.com/almeidalf

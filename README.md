@@ -1,8 +1,4 @@
-# Teste Madeinweb: Mobile
-Desenvolver uma aplicação Mobile
-
 ## Sobre o APP:
-- O aplicativo foi desenvolvido com a arquitetura MVC (Model-View-Controller)
 - Foi utilizado a própria storyboard para desenhar as telas do aplicativo. 
 - Utilizei as seguintes dependências para melhorar o desenvolvimento do app: 	
     * Alamofire para realizar requisições.

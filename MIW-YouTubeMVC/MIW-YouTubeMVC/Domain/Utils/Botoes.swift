@@ -24,7 +24,7 @@ class Botoes {
         let imageContainer = UIView(frame: CGRect(x: 0, y: 0, width: 220, height: 30))
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 220, height: 30))
         imageView.contentMode = .scaleAspectFit
-        let image = UIImage(named: "madeinweb")
+        let image = UIImage(named: "youtube-logo")
         imageView.image = image
         imageContainer.addSubview(imageView)
         view.navigationItem.titleView = imageContainer

@@ -9,7 +9,7 @@ import Foundation
 
 class API {
     static let urlAPI: String = "https://www.googleapis.com/youtube/v3/";
-    static let APIKEY: String = "AIzaSyDu09GYr9YCghpMYZwVsxGV7ZdoPVirtzI";
+    static let APIKEY: String = "SUA_API_KEY";
     
     
     static let PROCURAR_VIDEOS: String             = urlAPI + "search?part=id,snippet&q=TERMO_DE_BUSCA&key="+APIKEY+"";
